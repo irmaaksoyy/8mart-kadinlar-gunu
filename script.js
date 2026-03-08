@@ -127,11 +127,23 @@ isimGoster();
 
 
 
-let sayac = 0;
+/* ÇİÇEK SAYACI */
+
+let sayac = localStorage.getItem("cicekSayisi");
+
+if(!sayac){
+sayac = 0;
+}
+
+document.getElementById("cicekSayisi").innerText =
+sayac + " kişi çiçek bıraktı";
+
 
 function cicekBirak(){
 
 sayac++;
+
+localStorage.setItem("cicekSayisi", sayac);
 
 document.getElementById("cicekSayisi").innerText =
 sayac + " kişi çiçek bıraktı";
