@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+<title>8 Mart Dünya Kadınlar Günü</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1 class="title">8 Mart Dünya Kadınlar Günü Kutlu Olsun!</h1>
+
+<p class="subtitle">
+Kadınların emeği, gücü ve sevgisi dünyayı güzelleştirir.
+</p>
+
+<button onclick="anmaAc()">Anma Sayfasına Git</button>
+
+</section>
+
+<section id="anma">
+
+<h1 class="unutmadik">UNUTMADIK</h1>
+
+<div class="candles"></div>
+
+<div class="isimDuvari">
+
+<h2 class="aniBaslik">Hayatları Yarım Kalan Kadınlar</h2>
+
+<div id="isimler"></div>
+
+</div>
+
+<section class="yardimBolum">
+
+<h2>Uluslararası Sessiz Yardım Çağrısı</h2>
+
+<img class="yardimImg"
+src="https://www.tgrthaber.com/mavikadin/wp-content/images/haberler/24-11/14/adsiz-tasarim-15.jpg">
+
+<p>
+Bu el hareketi şiddet gören kişilerin sessizce yardım istemesi için
+kullanılan uluslararası bir işarettir.
+</p>
+
+<p>
+Avucunuzu gösterin → başparmağınızı içeri katlayın → diğer parmaklarınızı kapatın.
+</p>
+
+</section>
+
+<p class="dayanisma">
+
+Eğer şiddet görüyorsan bil ki yalnız değilsin.
+Bu dünyada seni duymak isteyen kadınlar var.
+Yanında duracak insanlar var.
+
+Yardım istemek zayıflık değildir.
+Güvende olmak, korkmadan yaşamak senin hakkın.
+
+</p>
+
+<section class="destekBolum">
+
+<h2>Acil Destek Hatları</h2>
+
+<div class="acilHatlar">
+
+<div class="hat">
+
+<img src="https://pbs.twimg.com/profile_images/1415288252441972742/YWoAPlal_400x400.jpg">
+
+<h3>ALO 183</h3>
+
+<p>Kadın, çocuk ve aileler için sosyal destek hattı</p>
+
+</div>
+
+<div class="hat">
+
+<img src="data:image/png;base64,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">
+
+<h3>112 Acil</h3>
+
+<p>Acil durumlarda hemen arayın</p>
+
+</div>
+
+<div class="hat">
+
+<img src="https://play-lh.googleusercontent.com/VSVCO7hzwQS8xpcRClbfLvrAzZFhWvH1itHSzmg1nTyqu8TBUY_uYcdHfOAA0TyIE-XL">
+
+<h3>KADES</h3>
+
+<p>Kadın destek uygulaması ile yardım isteyin</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cicekBolum">
+
+<h2>Anmak için bir çiçek bırak</h2>
+
+<p>Bu sayfayı ziyaret edenler anmak için bir çiçek bırakabilir.</p>
+
+<button class="cicekButon" onclick="cicekBirak()">🌸 Çiçek Bırak</button>
+
+<p id="cicekSayisi">0 kişi çiçek bıraktı</p>
+
+</section>
+
+<div class="kapanis">
+
+<p>
+Bu sayfa yalnızca bir anma değildir.
+</p>
+
+<p>
+Bu isimler bir istatistik değil,
+yarım kalmış hayatların hatırasıdır.
+</p>
+
+<p class="son">
+
+Bazı isimler yalnızca hatırlanmaz,
+taşıdığımız dünyayı değiştirmemiz gerektiğini hatırlatır.
+
+</p>
+
+<p class="son2">
+
+Unutmadık • Unutturmayacağız
+
+</p>
+
+</div>
+
+</section>
+
+<p class="imza">
+
+Bu sayfa 8 Mart Dünya Kadınlar Günü için, unutulmaması gereken kadınların anısına hazırlanmıştır.
+
+<span class="imzaAd">Irmak Aksoy • @code.byirmak</span>
+
+<span class="imzaYil">© 2026</span>
+
+</p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
